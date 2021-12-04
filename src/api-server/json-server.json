@@ -1,0 +1,467 @@
+{
+  "intake": [
+    {
+      "items": [
+        {
+          "id": 23,
+          "item_name": "Fresh 3",
+          "metrc_uid": "1A000000000000000000000B0",
+          "qty_grams": 2000,
+          "qty_lbs": 4.41,
+          "received_qty_grams": 2000,
+          "metrc_qty_grams": 2000,
+          "metrc_received_discrepancy_grams": 0,
+          "metrc_received_discrepancy_perc": 0,
+          "fresh_or_leaf": "Fresh",
+          "processing_type": "Solventless",
+          "output_consistency": "Rosin",
+          "output_name": null,
+          "item_type": "Ingredient",
+          "final_sku_or_mix": "Mix 1",
+          "lot_num": "BAR-FRE-174",
+          "special_directions": null,
+          "crc": "None",
+          "toll_processing_rate": null,
+          "received_qty_toll_proc_rate": null,
+          "bill_amount": null,
+          "bill_num": null,
+          "date_created": "2021-04-13 14:48:16",
+          "date_updated": "2021-04-13 15:26:30"
+        },
+        {
+          "id": 24,
+          "item_name": "Fresh 4",
+          "metrc_uid": "1A000000000000000000000B1",
+          "qty_grams": 2000,
+          "qty_lbs": 4.41,
+          "received_qty_grams": 2000,
+          "metrc_qty_grams": 2000,
+          "metrc_received_discrepancy_grams": 0,
+          "metrc_received_discrepancy_perc": 0,
+          "fresh_or_leaf": "Fresh",
+          "processing_type": "Solventless",
+          "output_consistency": "Rosin",
+          "output_name": null,
+          "item_type": "Ingredient",
+          "final_sku_or_mix": "Mix 1",
+          "lot_num": "BAR-FRE-093",
+          "special_directions": null,
+          "crc": "None",
+          "toll_processing_rate": null,
+          "received_qty_toll_proc_rate": null,
+          "bill_amount": null,
+          "bill_num": null,
+          "date_created": "2021-04-13 15:18:37",
+          "date_updated": "2021-04-13 15:26:30"
+        },
+        {
+          "id": 26,
+          "item_name": "Fresh 5",
+          "metrc_uid": "1A000000000000000000000B2",
+          "qty_grams": 4000,
+          "qty_lbs": 8.82,
+          "received_qty_grams": 2000,
+          "metrc_qty_grams": 2000,
+          "metrc_received_discrepancy_grams": 0,
+          "metrc_received_discrepancy_perc": 0,
+          "fresh_or_leaf": "Fresh",
+          "processing_type": "Solventless",
+          "output_consistency": "Rosin",
+          "output_name": null,
+          "item_type": "Mix",
+          "final_sku_or_mix": "Mix 1",
+          "lot_num": "BAR-FRE-642",
+          "special_directions": null,
+          "crc": "None",
+          "toll_processing_rate": null,
+          "received_qty_toll_proc_rate": null,
+          "bill_amount": null,
+          "bill_num": null,
+          "date_created": "2021-04-13 15:26:30",
+          "date_updated": "2021-04-13 15:26:30"
+        }
+      ],
+      "id": 5,
+      "client_name": "BARE Dispensary",
+      "origin_client_id": 3,
+      "origin_dba": "Next Green Wave LLC",
+      "origin_license_name": "Next Green Wave LLC",
+      "origin_license_num": "CCL19-0002587",
+      "sales_rep": "SalesRep1",
+      "type": "Drop Off",
+      "delivery_date": "04/13/2021",
+      "pickup_date": null,
+      "scheduled_pickup_date": null,
+      "actual_pickup_date": null,
+      "fresh_total_qty_grams": 4000,
+      "fresh_total_qty_lbs": 8.82,
+      "leaf_total_qty_grams": 0,
+      "leaf_total_qty_lbs": 0,
+      "deal": "Toll-Processing",
+      "intake_notes": "",
+      "dispatcher_notes": "",
+      "bookkeeper_notes": "",
+      "manifest_num": [
+        "123123123"
+      ],
+      "invoice_or_bill": null,
+      "intake_status": "Bookkeeper",
+      "date_created": "04/13/2021 05:37:30",
+      "date_updated": "04/13/2021 08:26:30"
+    }
+  ],
+  "work-order": [
+    {
+      "id": 1,
+      "item_id": 3,
+      "item_type": "Mix",
+      "template_id": "1I5LO-NuUp_F3db7ben2lXIrjgMaqUnu15ZjA0cGcgZQ",
+      "status": "Done",
+      "date_created": "2021-03-25 16:52:33"
+    },
+    {
+      "id": 2,
+      "item_id": 4,
+      "item_type": "SKU",
+      "template_id": "164TTwIleGXKA8D3MbzLPvR-Q1L7UGb6cXkc3iDqXTH0",
+      "status": "Done",
+      "date_created": "2021-03-29 18:36:28"
+    }
+  ],
+  "values": {
+    "sales_rep": [
+      {
+        "id": 1,
+        "first_name": "SalesRep1",
+        "last_name": "Sales1",
+        "email": "sales1@bigoilco.com"
+      },
+      {
+        "id": 2,
+        "first_name": "SalesRep2",
+        "last_name": "Sales2",
+        "email": "sales2@bigoilco.com"
+      },
+      {
+        "id": 3,
+        "first_name": "SalesRep3",
+        "last_name": "Sales3",
+        "email": "sales3@bigoilco.com"
+      }
+    ],
+    "deal": [
+      {
+        "id": 1,
+        "name": "Toll-Processing"
+      },
+      {
+        "id": 2,
+        "name": "Split-Processing"
+      },
+      {
+        "id": 3,
+        "name": "Bear Collab"
+      },
+      {
+        "id": 4,
+        "name": "Purchase"
+      }
+    ],
+    "crc": [
+      {
+        "id": 1,
+        "name": "None"
+      },
+      {
+        "id": 2,
+        "name": "Regular"
+      },
+      {
+        "id": 3,
+        "name": "Light"
+      },
+      {
+        "id": 4,
+        "name": "Heavy"
+      }
+    ],
+    "output_consistency": [
+      {
+        "id": 1,
+        "name": "HCE"
+      },
+      {
+        "id": 2,
+        "name": "Budder"
+      },
+      {
+        "id": 3,
+        "name": "HTE/Terps"
+      },
+      {
+        "id": 4,
+        "name": "Sauce"
+      },
+      {
+        "id": 5,
+        "name": "Badder (Connected)"
+      },
+      {
+        "id": 6,
+        "name": "Diamonds"
+      },
+      {
+        "id": 7,
+        "name": "Crumble"
+      },
+      {
+        "id": 8,
+        "name": "1G Cart"
+      },
+      {
+        "id": 9,
+        "name": "0.5G Cart"
+      },
+      {
+        "id": 10,
+        "name": "0.6g Cart"
+      },
+      {
+        "id": 11,
+        "name": "Fresh Press Rosin"
+      },
+      {
+        "id": 12,
+        "name": "Water Hash"
+      },
+      {
+        "id": 13,
+        "name": "Cold Cure Rosin Badder"
+      },
+      {
+        "id": 19,
+        "name": "Rosin"
+      }
+    ]
+  },
+  "client": [
+    {
+      "license_expiration": "07/10/2021",
+      "id": 1,
+      "sales_rep_id": 2,
+      "licensed_business_name": "Caps Apothecary, Inc",
+      "doing_business_as": "BARE Dispensary",
+      "license_address": "690 Garnet Ave",
+      "license_address_city": "Palm Springs",
+      "license_address_state": "CA",
+      "license_address_zip": "92262",
+      "main_contact_name": "Joel",
+      "main_contact_title": "Purchase Manager",
+      "main_contact_phone": "7606737400",
+      "email": "micoang@gmail.com",
+      "delivery_pickup_constraints": "Monday - Friday 9am - 5:30pm",
+      "delivery_pickup_contact_name": "Joel Diaz",
+      "delivery_pickup_contact_phone": "7606737400",
+      "delivery_pickup_contact_email": "bare.invoices@gmail.com",
+      "retail_locations": "",
+      "dispatch_driver_notes": "Take it easy",
+      "client_notes": "",
+      "fulfillment_notes": "",
+      "accounting_full_name": "Garret R",
+      "accounting_phone": "",
+      "accounting_email": "garret@mankindcannabis.com",
+      "accounting_instructions": "",
+      "payment_terms": "",
+      "payment_type": "",
+      "products_interested": "Concentrates,Disitillate,Cartridges,Packaging Services,flower,live resin,cola",
+      "license_types": "Retailer,Distributor",
+      "license_num": "C11-0000649-LIC",
+      "license_num_2": "C11-0000649-LIC",
+      "license_num_3": "C11-0000649-LIC",
+      "license_file_1": "https://drive.google.com/open?id=1iU4P7F_8x6GNYm-jWHFt8NeLIkm5PDgZ",
+      "license_file_2": "",
+      "license_file_3": "",
+      "cdtfa_seller_permit_file": {},
+      "cdtfa_seller_permit_num": "103-225860",
+      "completed_w9": {},
+      "metrc_contact_phone": "awawaw",
+      "metrc_contact_email": "awawa@gmail.com",
+      "leaf_solventless_toll_proc_rate": null,
+      "fresh_solventless_toll_proc_rate": null,
+      "leaf_bho_toll_proc_rate": null,
+      "fresh_bho_toll_proc_rate": null,
+      "split_processing": null,
+      "bear_labs_collab": null,
+      "leaf_purchase_price_per_perc": null,
+      "leaf_purchase_price_per_kg": null,
+      "fresh_purchase_price_per_perc": null,
+      "fresh_purchase_price_per_kg": null,
+      "date_created": "2021-04-12 15:25:44",
+      "date_updated": "2021-04-12 15:25:44"
+    },
+    {
+      "license_expiration": "07/01/2020",
+      "id": 2,
+      "sales_rep_id": 2,
+      "licensed_business_name": "North Coast Wellbeing Inc",
+      "doing_business_as": "Madrone",
+      "license_address": "17975 N Hwy 1",
+      "license_address_city": "Fort Bragg",
+      "license_address_state": "CA",
+      "license_address_zip": "95437",
+      "main_contact_name": "Chris Mener",
+      "main_contact_title": "Lead Accountant",
+      "main_contact_phone": "7074099154",
+      "email": "chris@madronecalifornia.com",
+      "delivery_pickup_constraints": null,
+      "delivery_pickup_contact_name": null,
+      "delivery_pickup_contact_phone": null,
+      "delivery_pickup_contact_email": null,
+      "retail_locations": null,
+      "dispatch_driver_notes": null,
+      "client_notes": null,
+      "fulfillment_notes": null,
+      "accounting_full_name": null,
+      "accounting_phone": "9512583305",
+      "accounting_email": "chris@madronecalifornia.com",
+      "accounting_instructions": null,
+      "payment_terms": null,
+      "payment_type": null,
+      "products_interested": "Budder/Sugar/Shatter, Sauce/Diamonds",
+      "license_types": "Cultivator, Distributor",
+      "license_num": "C11-0000649-LIC",
+      "license_num_2": "C11-0000649-LIC",
+      "license_num_3": "C11-0000649-LIC",
+      "license_file_1": "https://drive.google.com/open?id=1uEL57Lf5ejsvjaxDvYjFMT1zhqqJ6Ona",
+      "license_file_2": null,
+      "license_file_3": null,
+      "cdtfa_seller_permit_file": "https://drive.google.com/open?id=1bw8x5iWDz1ZX2boLYXLuwv7B7oEukie3",
+      "cdtfa_seller_permit_num": "AA 103-231598",
+      "completed_w9": null,
+      "metrc_contact_phone": null,
+      "metrc_contact_email": null,
+      "leaf_solventless_toll_proc_rate": null,
+      "fresh_solventless_toll_proc_rate": null,
+      "leaf_bho_toll_proc_rate": null,
+      "fresh_bho_toll_proc_rate": null,
+      "split_processing": null,
+      "bear_labs_collab": null,
+      "leaf_purchase_price_per_perc": null,
+      "leaf_purchase_price_per_kg": null,
+      "fresh_purchase_price_per_perc": null,
+      "fresh_purchase_price_per_kg": null,
+      "date_created": "2021-04-12 15:25:44",
+      "date_updated": "2021-04-12 15:25:44"
+    },
+    {
+      "email": "russek123@bigoilco.com",
+      "sales_rep_id": 3,
+      "licensed_business_name": "asasasasasas",
+      "doing_business_as": "asasasas",
+      "completed_w9": null,
+      "license_num": "",
+      "license_file_1": "",
+      "license_num_2": "",
+      "license_file_2": "",
+      "license_num_3": "",
+      "license_file_3": "",
+      "cdtfa_seller_permit_file": null,
+      "cdtfa_seller_permit_num": "asasasas",
+      "license_types": "",
+      "license_expiration": "04/21/2021",
+      "license_address": "Davao",
+      "license_address_city": "Dav",
+      "license_address_state": "Dav",
+      "license_address_zip": "DAVAO",
+      "main_contact_name": "awawaw",
+      "main_contact_title": "awawa",
+      "main_contact_phone": "wawaw",
+      "delivery_pickup_contact_name": "awaw",
+      "delivery_pickup_contact_phone": "awaw",
+      "delivery_pickup_contact_email": "awaw",
+      "delivery_pickup_constraints": "awawaw",
+      "metrc_contact_phone": "awaw",
+      "metrc_contact_email": "awaw",
+      "accounting_full_name": "awaw",
+      "accounting_phone": "awaw",
+      "accounting_email": "awaw",
+      "accounting_instructions": "awaw",
+      "products_interested": "",
+      "date_created": "",
+      "status": "",
+      "id": 5,
+      "headers": {
+        "content-type": "multipart/form-data"
+      }
+    },
+    {
+      "email": "example@gmail.com",
+      "sales_rep_id": 2,
+      "licensed_business_name": "asasasa",
+      "doing_business_as": "asasas",
+      "completed_w9": {},
+      "license_num": "",
+      "license_file_1": null,
+      "license_num_2": "",
+      "license_file_2": null,
+      "license_num_3": null,
+      "license_file_3": "",
+      "cdtfa_seller_permit_file": {},
+      "cdtfa_seller_permit_num": "asasa",
+      "license_types": "Retailer,Distributor",
+      "license_expiration": "04/23/2021",
+      "license_address": "asasa",
+      "license_address_city": "sasas",
+      "license_address_state": "asasa",
+      "license_address_zip": "sasas",
+      "main_contact_name": "asasa",
+      "main_contact_title": "asasasa",
+      "main_contact_phone": "saasa",
+      "delivery_pickup_contact_name": "sasas",
+      "delivery_pickup_contact_phone": "asasas",
+      "delivery_pickup_contact_email": "asasasasa",
+      "delivery_pickup_constraints": "sasas",
+      "metrc_contact_phone": "asasas",
+      "metrc_contact_email": "asasasa@gmail.com",
+      "accounting_full_name": "sasas",
+      "accounting_phone": "asas",
+      "accounting_email": "asas",
+      "accounting_instructions": "asasas",
+      "products_interested": "Concentrates,Disitillate,Cartridges,asas",
+      "status": "",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "first_name": "SalesRep1",
+      "last_name": "Sales1",
+      "email": "sales1@bigoilco.com",
+      "role": "Admin",
+      "date_created": "2021-04-12 15:25:44",
+      "date_updated": "2021-04-12 15:25:44",
+      "image": "cat.jpeg"
+    },
+    {
+      "id": 2,
+      "first_name": "Mico",
+      "last_name": "Ang",
+      "email": "sales1@bigoilco.com",
+      "role": "Sales Representative",
+      "date_created": "2021-04-12 15:25:44",
+      "date_updated": "2021-04-12 15:25:44",
+      "image": "Mico.jpg"
+    },
+    {
+      "id": 3,
+      "first_name": "Jayson",
+      "last_name": "Suan",
+      "email": "sales1@bigoilco.com",
+      "role": "Sales Representative",
+      "date_created": "2021-04-12 15:25:44",
+      "date_updated": "2021-04-12 15:25:44",
+      "image": ""
+    }
+  ]
+}

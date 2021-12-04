@@ -1,0 +1,71 @@
+name: CI/CD for staging
+on:
+  push:
+    branches: ['staging']
+jobs:
+  build-and-deploy:
+    name: Build frontend and Cloud Functions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: 'staging'
+      - name: Set Node version to 12
+        uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build Vue
+        run: npm run build
+        env:
+          NODE_ENV: production
+          VUE_APP_API_URL: https://us-central1-bigoilco-staging.cloudfunctions.net/api
+          VUE_APP_FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY_STAGING }}
+          VUE_APP_FIREBASE_AUTH_DOMAIN: bigoilco-staging.firebaseapp.com
+          VUE_APP_FIREBASE_STORAGE_BUCKET: bigoilco-staging.appspot.com
+          VUE_APP_FIREBASE_MSG_SENDER_ID: ${{ secrets.FIREBASE_MSG_SENDER_STAGING }}
+          VUE_APP_FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID_STAGING }}
+          VUE_APP_FIREBASE_PROJECT_ID: bigoilco-staging
+      - name: Install Cloud Functions dependencies
+        run: npm ci
+        working-directory: functions
+      - name: Set Cloud Functions config
+        uses: w9jds/firebase-action@master
+        with:
+          args: > 
+            functions:config:set
+            db.env=staging
+            db.socketpath=$DB_SOCKET_PATH
+            db.user=$DB_USER
+            db.password=$DB_PASSWORD
+            db.database=$DB_DATABASE
+            server.baseurl=$BASE_URL
+            slack.enable=$SLACK_ENABLE
+            slack.webhook.dispatcher=$WEBHOOK_DISPATCHER
+            googleapi.workorder.template=$WORK_ORDER_TEMPLATE
+            googleapi.workorder.outdir=$WORK_ORDER_OUTDIR
+            googleapi.client.uploaddir=$CLIENT_UPLOADDIR
+            auth.admin=$AUTH_ADMIN
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN_STAGING }}
+          DB_HOST: bigoilco-staging:us-central1:bigoilco-staging-db
+          DB_SOCKET_PATH: /cloudsql/bigoilco-staging:us-central1:bigoilco-staging-db
+          DB_PORT: 3306
+          DB_DATABASE: bigoilco
+          DB_USER: root
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD_STAGING }}
+          BASE_URL: https://bigoilco-staging.web.app
+          SLACK_ENABLE: true
+          WEBHOOK_DISPATCHER: ${{ secrets.WEBHOOK_DISPATCHER_STAGING }}
+          SERVICE_ACCOUNT: ${{ secrets.SERVICE_ACCOUNT_STAGING }}
+          WORK_ORDER_TEMPLATE: ${{ secrets.WORK_ORDER_TEMPLATE_STAGING }}
+          WORK_ORDER_OUTDIR: ${{ secrets.WORK_ORDER_OUTDIR_STAGING }}
+          CLIENT_UPLOADDIR: ${{ secrets.CLIENT_UPLOADDIR_STAGING }}
+          AUTH_ADMIN: ${{ secrets.AUTH_ADMIN_STAGING }}
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN_STAGING }}

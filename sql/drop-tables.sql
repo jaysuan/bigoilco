@@ -1,0 +1,11 @@
+DROP TABLE audit_logs;
+DROP TABLE work_orders;
+DROP TABLE intake_items;
+DROP TABLE intakes;
+DROP TABLE clients;
+DROP TABLE deal_types;
+DROP TABLE sales_reps;
+DROP TABLE output_consistency;
+DROP TABLE crc;
+DROP TABLE knex_migrations;
+DROP TABLE knex_migrations_lock;
